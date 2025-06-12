@@ -9,15 +9,15 @@ window.addEventListener("resize", resize);
 resize();
 
 // Points that will move and connect with lines
-const pointsCount = 120;
+const pointsCount = 150;
 const points = [];
 
 class Point {
   constructor() {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
-    this.vx = (Math.random() - 0.5) * 0.3; // velocity x
-    this.vy = (Math.random() - 0.5) * 0.3; // velocity y
+    this.vx = (Math.random() - 0.5) * 0.4; // velocity x
+    this.vy = (Math.random() - 0.5) * 0.4; // velocity y
     this.radius = 1.5;
   }
   move() {
