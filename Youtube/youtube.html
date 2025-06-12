@@ -1,1 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <title>Youtube</title>
+  </head>
+  <body style="height: 5000px; padding-top: 80px">
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input type="text" placeholder="Search" class="search-bar" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="icons/ronaldo.jfif" />
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img class="home-icon" src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="explore-icon" src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="subscriptions-icon" src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="originals-icon" src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="youtube-music-icon" src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="library-icon" src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </div>
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=LfaMVlDaQ24&ab_channel=freeCodeCamp.org"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail1.avif" />
+          </a>
+          <div class="video-time">25:51:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@freecodecamp">
+              <img class="channel-picture" src="channels/channel1.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=LfaMVlDaQ24&ab_channel=freeCodeCamp.org"
+              >
+                Harvard CS50 (2023) – Full Computer Science University Course
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@freecodecamp"
+                >freeCodeCamp.org</a
+              >
+            </p>
+            <p class="video-stats">6.6M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=MePvbB3m5OI&ab_channel=Parallel8Productions"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail2.avif" />
+          </a>
+          <div class="video-time">1:59:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@OfficialParallel8">
+              <img class="channel-picture" src="channels/channel2.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=MePvbB3m5OI&ab_channel=Parallel8Productions"
+              >
+                OTX PROVING GROUND! ELECTRIC Sparring Event With SKILLED Texas
+                Boxers!
+              </a>
+            </p>
+            <p class="video-author">
+              <a
+                href="https://www.youtube.com/watch?v=MePvbB3m5OI&ab_channel=Parallel8Productions"
+                >Parallel 8 Productions</a
+              >
+            </p>
+            <p class="video-stats">137K views · 5 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=Ky_l9FxSHOs&ab_channel=carwow"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail3.avif" />
+          </a>
+          <div class="video-time">12:49</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@carwow">
+              <img class="channel-picture" src="channels/channel3.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=Ky_l9FxSHOs&ab_channel=carwow"
+              >
+                911 GT3 RS v AMG GT R: DRAG RACE
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@carwow">carwow</a>
+            </p>
+            <p class="video-stats">1.7M views · 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=n5gQ77u2DVM&ab_channel=Venomm"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail4.avif" />
+          </a>
+          <div class="video-time">12:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@lvl.venomm">
+              <img class="channel-picture" src="channels/channel4.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=n5gQ77u2DVM&ab_channel=Venomm"
+                >STAGE 3 1012Hp MERCEDES AMG E63s 4Matic+ POV DRIVE
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@lvl.venomm">Venomm</a>
+            </p>
+            <p class="video-stats">2.4K views · 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            <img class="video-thumbnail" src="thumbnails/thumbnail-5.webp" />
+          </a>
+          <div class="video-time">11:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/c/CSDojo">
+              <img class="channel-picture" src="channels/channel-5.jpeg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                Kadane's Algorithm to Maximum Sum Subarray
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/c/CSDojo">CS Dojo</a>
+            </p>
+            <p class="video-stats">519K views · 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=wz1r_VJaJZw&ab_channel=PremierLeague"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail6.avif" />
+          </a>
+          <div class="video-time">1:00:13</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@premierleague">
+              <img class="channel-picture" src="channels/channel6.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=wz1r_VJaJZw&ab_channel=PremierLeague"
+              >
+                1 HOUR of the Premier League's BEST Goals in the Last 10 Years!
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@premierleague"
+                >Premier League
+              </a>
+            </p>
+            <p class="video-stats">14M views · 7 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=LfaMVlDaQ24&ab_channel=freeCodeCamp.org"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail1.avif" />
+          </a>
+          <div class="video-time">25:51:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@freecodecamp">
+              <img class="channel-picture" src="channels/channel1.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=LfaMVlDaQ24&ab_channel=freeCodeCamp.org"
+              >
+                Harvard CS50 (2023) – Full Computer Science University Course
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@freecodecamp"
+                >freeCodeCamp.org</a
+              >
+            </p>
+            <p class="video-stats">6.6M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=MePvbB3m5OI&ab_channel=Parallel8Productions"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail2.avif" />
+          </a>
+          <div class="video-time">1:59:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@OfficialParallel8">
+              <img class="channel-picture" src="channels/channel2.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=MePvbB3m5OI&ab_channel=Parallel8Productions"
+              >
+                OTX PROVING GROUND! ELECTRIC Sparring Event With SKILLED Texas
+                Boxers!
+              </a>
+            </p>
+            <p class="video-author">
+              <a
+                href="https://www.youtube.com/watch?v=MePvbB3m5OI&ab_channel=Parallel8Productions"
+                >Parallel 8 Productions</a
+              >
+            </p>
+            <p class="video-stats">137K views · 5 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=Ky_l9FxSHOs&ab_channel=carwow"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail3.avif" />
+          </a>
+          <div class="video-time">12:49</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@carwow">
+              <img class="channel-picture" src="channels/channel3.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=Ky_l9FxSHOs&ab_channel=carwow"
+              >
+                911 GT3 RS v AMG GT R: DRAG RACE
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@carwow">carwow</a>
+            </p>
+            <p class="video-stats">1.7M views · 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=n5gQ77u2DVM&ab_channel=Venomm"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail4.avif" />
+          </a>
+          <div class="video-time">12:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@lvl.venomm">
+              <img class="channel-picture" src="channels/channel4.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=n5gQ77u2DVM&ab_channel=Venomm"
+                >STAGE 3 1012Hp MERCEDES AMG E63s 4Matic+ POV DRIVE
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@lvl.venomm">Venomm</a>
+            </p>
+            <p class="video-stats">2.4K views · 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            <img class="video-thumbnail" src="thumbnails/thumbnail-5.webp" />
+          </a>
+          <div class="video-time">11:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/c/CSDojo">
+              <img class="channel-picture" src="channels/channel-5.jpeg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                Kadane's Algorithm to Maximum Sum Subarray
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/c/CSDojo">CS Dojo</a>
+            </p>
+            <p class="video-stats">519K views · 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a
+            href="https://www.youtube.com/watch?v=wz1r_VJaJZw&ab_channel=PremierLeague"
+          >
+            <img class="video-thumbnail" src="thumbnails/thumbnail6.avif" />
+          </a>
+          <div class="video-time">1:00:13</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="profile-picture">
+            <a href="https://www.youtube.com/@premierleague">
+              <img class="channel-picture" src="channels/channel6.jpg" />
+            </a>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a
+                href="https://www.youtube.com/watch?v=wz1r_VJaJZw&ab_channel=PremierLeague"
+              >
+                1 HOUR of the Premier League's BEST Goals in the Last 10 Years!
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/@premierleague"
+                >Premier League
+              </a>
+            </p>
+            <p class="video-stats">14M views · 7 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
