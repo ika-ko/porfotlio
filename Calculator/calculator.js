@@ -9,7 +9,7 @@ function calc(value) {
     case "=":
       if (calculation.startsWith("*") || calculation.startsWith("/"))
         calculation = "";
-      else calculation = eval(calculation);
+      else calculation = eval(calculation).toString();
       document.getElementById("calcscreen").innerText = calculation;
       console.log("calculation");
       break;
@@ -20,6 +20,19 @@ function calc(value) {
       break;
 
     default:
+      if (
+        ["+", "-", "*", "/"].includes(calculation.at(-1)) &&
+        ["+", "-", "*", "/"].includes(value)
+      ) {
+        return;
+      }
+
+      if (
+        calculation === "" &&
+        (value === "+" || value === "*" || value === "/")
+      ) {
+        return;
+      }
       if (calculation.length >= 20) return;
       calculation += value;
       document.getElementById("calcscreen").innerText = calculation;
