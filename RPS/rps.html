@@ -1,1 +1,51 @@
-RPS
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="rps.css" />
+    <script src="rps.js" defer></script>
+  </head>
+  <body>
+    <div class="score-div">
+      <div class="title">Rock Paper Scissors</div>
+      <div class="score-container">
+        <div class="score">
+          <p>PLAYER</p>
+          <p id="player-score">0</p>
+        </div>
+        <div class="score">
+          <p>COMPUTER</p>
+          <p id="computer-score">0</p>
+        </div>
+      </div>
+    </div>
+    <div id="main-game-div">
+      <div
+        id="result-display"
+        style="display: none; text-align: center; padding: 30px"
+      ></div>
+      <div class="scissors-div">
+        <div>
+          <img
+            alt="Scissors Image"
+            onclick="play('scissors')"
+            src="scissors.png"
+          />
+        </div>
+      </div>
+      <div class="paper-rock-div">
+        <div>
+          <img alt="Paper Image" onclick="play('paper')" src="paper.png" />
+        </div>
+        <div>
+          <img alt="Rock Image" onclick="play('rock')" src="rock.png" />
+        </div>
+      </div>
+    </div>
+    <button class="reset-score" onclick="resetScore()">Reset Score</button>
+    <p class="Get-back"><a href="../index.html">&#x2190; Return</a></p>
+  </body>
+</html>
