@@ -2,8 +2,16 @@ const canvas = document.getElementById("strings");
 const ctx = canvas.getContext("2d");
 
 function resize() {
+  const fullHeight = Math.max(
+    document.body.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.clientHeight,
+    document.documentElement.scrollHeight,
+    document.documentElement.offsetHeight
+  );
+
   canvas.width = window.innerWidth;
-  canvas.height = document.documentElement.scrollHeight;
+  canvas.height = fullHeight;
 }
 window.addEventListener("resize", resize);
 resize();
