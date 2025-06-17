@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="javascript.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="header-div">
+      <p>JAVASCRIPT</p>
+      <p>Here are a few things I've built using JS.</p>
+    </div>
+    <div class="main-page-div">
+      <div class="projects-container">
+        <div class="project-image">
+          <img class="project-photo" src="calculator.png" />
+        </div>
+        <div class="project-info">
+          <p class="project-title">JS Calculator</p>
+          <p class="project-description">
+            A sleek, fully functional calculator built with vanilla JavaScript.
+            It supports basic arithmetic operations (addition, subtraction,
+            multiplication, division) and features a modern UI with a responsive
+            design. Includes a toggleable dark mode for better usability and
+            visual comfort.
+          </p>
+          <div class="buttons">
+            <button>DOM</button><button>Clean UI</button>
+          </div>
+          <div class="view-div">
+            <a href="/Calculator/calculator.html">
+              <button>Live Demo</button></a
+            >
+            <button>View Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="project-image">
+          <img class="project-photo" src="rps.png" />
+        </div>
+        <div class="project-info">
+          <p class="project-title">Rock Paper Scissors</p>
+          <p class="project-description">
+            A simple and interactive Rock Paper Scissors game built with
+            JavaScript. Users can play against the computer with visual
+            feedback, score tracking, and result animations. Great for
+            demonstrating DOM manipulation, event handling, and basic game
+            logic. visual comfort.
+          </p>
+          <div class="buttons">
+            <button>DOM</button><button>Game Logic</button
+            ><button>Clean UI</button>
+          </div>
+          <div class="view-div">
+            <a href="/RPS/rps.html"> <button>Live Demo</button></a>
+            <button>View Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="project-image">
+          <img class="project-photo" src="youtube.png" />
+        </div>
+        <div class="project-info">
+          <p class="project-title">Youtube Clone</p>
+          <p class="project-description">
+            A responsive front-end replica of YouTube’s main interface built
+            with HTML, CSS, and JavaScript. It mimics key UI elements including
+            the video grid layout, sidebar navigation, search functionality, and
+            responsive design for different screen sizes. Ideal for practicing
+            layout structuring and component-based styling visual comfort.
+          </p>
+          <div class="buttons">
+            <button>DOM</button><button>Clean UI</button>
+          </div>
+          <div class="view-div">
+            <a href="/Youtube/youtube.html"> <button>Live Demo</button></a>
+            <button>View Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas id="myCanvas" style="width: 100%; height: 100%"></canvas>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+      ctx.fillStyle = "#00ffff";
+      ctx.shadowColor = "#00ffff";
+      ctx.shadowBlur = 20;
+      ctx.font = "40px monospace";
+      ctx.fillText("{}", 1650, 450);
+      ctx.fillText("<>", 250, 300);
+      ctx.fillText("()", 400, 750);
+      ctx.fillText('" "', 1600, 100);
+      ctx.fillStyle = "#ff00ff"; // bright pink fill color
+      ctx.shadowColor = "#ff00ff"; // neon glow color
+      ctx.shadowBlur = 20;
+      ctx.fillText("Const", 180, 550);
+      ctx.fillText("Function", 50, 100);
+      ctx.fillText("Let", 1570, 700);
+      ctx.fillText("Var", 1470, 300);
+
+      drawSymbols();
+    </script>
+  </body>
+</html>
